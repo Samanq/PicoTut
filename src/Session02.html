@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Session02</title>
+  </head>
+  <body>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Tahoma", Courier, monospace;
+        margin: 0;
+      }
+      p,
+      span {
+        margin: 0;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: bold;
+        /* margin: 10px 20px; */
+        /* margin: 10px 15px 20px 10px; */
+      }
+      div.content {
+        background-color: rgb(50, 50, 50);
+        padding: 20px;
+      }
+      .primary-color {
+        color: rgb(19, 255, 180);
+      }
+      #main-paragraph {
+        color: red;
+      }
+      input[disabled] {
+        background-color: red;
+        cursor: not-allowed;
+      }
+      .rectangle {
+        background-color: aqua;
+        width: 50vw;
+        width: 50%;
+        height: 200px;
+      }
+      .green-rect {
+        background-color: rgb(15, 83, 3);
+        width: 50%;
+        height: 50vh;
+        border: 5px solid red;
+        border-radius: 10px;
+        box-shadow: 5px 5px 7px 0px rgba(0, 0, 0, 0.685);
+        text-align: center;
+        /* text-align: right; */
+        /* text-align: justify; */
+      }
+    </style>
+    <div class="content">
+      <p class="primary-color">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptate
+        necessitatibus vero est inventore velit voluptas labore itaque fugit
+        praesentium?
+      </p>
+      <p id="main-paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptate
+        necessitatibus vero est inventore velit voluptas labore itaque fugit
+        praesentium?
+      </p>
+      <p class="content" id="p1" name="content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo voluptate
+        necessitatibus vero est inventore velit voluptas labore itaque fugit
+        praesentium?
+      </p>
+    </div>
+
+    <div>
+      <label for="firstName">First Name</label>
+      <input type="text" name="FirstName" id="firstName" />
+
+      <label for="lastName">Last Name</label>
+      <input type="text" name="LastName" id="lastName" disabled />
+    </div>
+
+    <div class="rectangle">
+      <div class="green-rect">
+        <p>Hi this is a test</p>
+      </div>
+    </div>
+  </body>
+</html>
