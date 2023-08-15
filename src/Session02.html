@@ -30,6 +30,20 @@
         background-color: rgb(50, 50, 50);
         padding: 20px;
       }
+
+      /* all elements with both classes box and item */
+      .box.item { 
+        height: 50px;
+        width: 50px;
+        background-color: yellowgreen;
+      }
+
+      .box .item {
+        height: 50px;
+        width: 50px;
+        background-color: yellowgreen;
+      }
+
       .primary-color {
         color: rgb(19, 255, 180);
       }
@@ -89,5 +103,11 @@
         <p>Hi this is a test</p>
       </div>
     </div>
+
+    <div class="box">
+      <div class="item"></div>
+    </div>
+
+    <p style="background-color: red;color: blue;">Some text</p>
   </body>
 </html>
