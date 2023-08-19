@@ -1,0 +1,21 @@
+.container{
+    gap: 10px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.item{
+    min-width: 200px;
+    text-align: center;
+    color: white;
+}
+.red{
+    background-color: red;
+}
+.green{
+    background-color: green;
+}
+.blue{
+    background-color: blue;
+}
