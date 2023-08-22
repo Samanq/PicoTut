@@ -1,0 +1,86 @@
+:root {
+  --white-color: #ffffff;
+  --navy-blue: #232f3e;
+  --light-gray: #d8d7d7;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "comic sans ms";
+  background-color: var(--light-gray);
+}
+a {
+    text-decoration: none;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--navy-blue);
+  color: var(--white-color);
+  align-items: center;
+  padding: 0 10px 1px 10px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 45px;
+}
+nav li {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+nav ul a {
+  display: flex;
+  align-items: center;
+}
+nav ul li:hover {
+  border: 1px solid var(--white-color);
+}
+nav a {
+  text-decoration: none;
+  color: var(--white-color);
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+.container{
+    margin: 10px;
+}
+.white-container{
+    background-color: var(--white-color);
+    padding: 10px;
+}
+.white-container .title{
+    display: flex;
+    gap: 20px;
+    align-items: end;
+}
+.white-container .title h2{
+    margin: 0;
+    line-height: 28px;
+}
+
+.white-container .title a{
+    font-size: 0.87rem;
+    color: #007185;
+}
+
+.product-card{
+
+}
+
+.product-card img {
+    width: 100px;
+}
