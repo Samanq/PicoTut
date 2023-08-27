@@ -15,7 +15,7 @@ body {
   background-color: var(--light-gray);
 }
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 nav {
   display: flex;
@@ -55,32 +55,82 @@ nav a {
   padding-left: 5px;
 }
 
-.container{
-    margin: 10px;
+.container {
+  margin: 10px;
 }
-.white-container{
-    background-color: var(--white-color);
-    padding: 10px;
+.white-container {
+  background-color: var(--white-color);
+  padding: 10px;
 }
-.white-container .title{
-    display: flex;
-    gap: 20px;
-    align-items: end;
+.white-container .title {
+  display: flex;
+  gap: 20px;
+  align-items: end;
 }
-.white-container .title h2{
-    margin: 0;
-    line-height: 28px;
-}
-
-.white-container .title a{
-    font-size: 0.87rem;
-    color: #007185;
+.white-container .title h2 {
+  margin: 0;
+  line-height: 28px;
 }
 
-.product-card{
-
+.white-container .title a {
+  font-size: 0.87rem;
+  color: #007185;
+}
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  /* background-color: #232f3e; */
+}
+.product-card {
+  width: 250px;
+  padding: 5px;
+  background-color: #e8e8e8;
 }
 
 .product-card img {
-    width: 100px;
+  width: 100%;
+}
+
+.offer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.offer .badge {
+  background-color: #cc0c39;
+  color: white;
+  font-size: 0.9rem;
+  border-radius: 3px;
+  padding: 5px;
+}
+.offer .expiry-date {
+  color: #cc0c39;
+  font-size: 0.86rem;
+  font-weight: bold;
+}
+
+.product-card .price-label {
+  position: relative;
+}
+.product-card .new-price {
+  margin-left: 8px;
+}
+
+.product-card .new-price::before {
+  content: "€";
+  font-size: 0.7rem;
+  position: absolute;
+  left: 0;
+}
+
+.product-card .old-price {
+  color: #575757;
+}
+.product-card .old-price small{
+  text-decoration: line-through;
+}
+
+.product-card p:last-child{
+  margin-top: 5px;
 }
